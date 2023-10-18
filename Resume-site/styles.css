@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 20px 20px;
+    font-family: 'Young Serif', serif;
+}
+
+.logo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  
+  .profile-1 {
+    text-align: center; 
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto; 
+    width: 20vw; 
+    border-radius: 8px;
+  }
+  
+
+.profile-img h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 10px 30px;
+}
+
+.button-1, .button-2 {
+    padding: 10px 30px;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.button-1:hover, .button-2:hover {
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+.basic-information {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    background-color: black;
+    padding: 20px 30px;
+    box-shadow: 1px 3px 8px rgb(71, 71, 71);
+}
+
+.information {
+    width: 50%;
+    text-align: justify;
+}
+
+.about-me {
+    width: 50%;
+    text-align: justify;
+}
+
+.art-images {
+    display: grid;
+  grid-template-columns: 1fr 1fr; 
+  row-gap: 50px;
+  
+}
+
+.art-images img {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ddd;
+      
+}
+
+.skills-gained h2, .experience h2, .education h2, .projects-done h2, .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 20vw;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    padding: 4vw 0;
+}
+
+.age {
+    padding-bottom: 50px;
+}
+
+
+.work1, .work2, .work3, .work4, .school1, .school2, .school3 {
+    width: 100%;
+    margin-bottom: 50px;
+    box-shadow: 1px 3px 8px rgb(71, 71, 71);
+    padding: 30px 30px;
+}
+
+
+.skills-list {
+    display: flex;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.skills-name {
+    width: 30%;
+    background-color: grey;
+    padding: 18px 30px;
+}
+
+.skill1 {
+    width: 70%;
+    box-shadow: 1px 3px 8px rgb(71, 71, 71);  
+}
+
+.work-done {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+#name, #email {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+#message {
+    width: 100%;
+    font-family: 'Young Serif', serif;
+    font-size: 16px;
+    margin-top: 3vw;
+}
+
+.submit {
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 3vw;
+    padding: 15px 20px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 1px 3px 8px rgb(33, 33, 33);
+    margin-bottom: 15vh;
+}
+
+
+@media only screen and (max-width: 876px) {
+    .skills-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .basic-information {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-me {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .work-done {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .art-images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .art-images img {
+        width: 80%;
+    }
+
+
+    .skills-name, .skill1 {
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 761px){
+    .profile-img img {
+       width: 60%;
+    }
+
+}
+@media only screen and (max-width: 460px){
+    .profile-img img {
+       width: 80%;
+    }
+
+}
+
+
+
